@@ -4,6 +4,10 @@
   "compilerOptions": {
     "strictPropertyInitialization": false,
     "baseUrl": "./",
+    "strictNullChecks": false,
+    "paths": {
+      "store": ["src/store.ts"]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
