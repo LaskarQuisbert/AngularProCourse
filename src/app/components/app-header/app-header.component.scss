@@ -1,5 +1,5 @@
 .app-header {
-  background: #ffe;
+  background: #eee;
   border-bottom: 1px solid #c1cedb;
   padding: 15px 0;
   text-align: center;
@@ -13,7 +13,7 @@
     cursor: pointer;
   }
   span {
-    // background: url(/img/logout.svg) no-repeat;
+    background: url(/img/logout.svg) no-repeat;
     background-color: aqua;
     background-size: contain;
     width: 24px;

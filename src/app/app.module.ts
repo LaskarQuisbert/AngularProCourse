@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { Store } from 'store';
 
 // feature modules
-import { AuthModule } from '../auth/auth.module';
-// import { HealthModule } from '../health/health.module';
+import { AuthModule } from 'src/auth/auth.module';
+import { HealthModule } from 'src/health/health.module';
 
 // containers
 import { AppComponent } from './containers/app/app.component';
@@ -24,8 +25,10 @@ export const ROUTES: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
+    FormsModule,
+    ReactiveFormsModule,
     AuthModule,
-    // HealthModule
+    HealthModule
   ],
   declarations: [
     AppComponent,
